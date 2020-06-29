@@ -1,0 +1,422 @@
+.homepage{
+    height:auto;
+    display: flex;
+    margin:0 auto;
+    padding: 0 !important;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+}
+.section-leagues{
+    height: 600px;
+    text-align: center;
+    color:white;
+    padding: 0px !important;
+    background: url('../image-ekstraklasa/bg.jpg');
+    background-size: 100% 100%;
+}
+.section-header{
+    width: 100%;
+    height: 20%;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.678);
+}
+.section-header p{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+.section-container{
+    width: 100%;
+    height: 80%;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: rgba(8, 3, 3, 0.596);
+}
+.section-container ul{
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
+    width:100%;
+    height:auto;
+    margin: 0 !important;
+    list-style-type: none;
+    padding: 0 !important;
+}
+.section-container ul>li{
+    width:100%;
+    height:120px;
+    text-align: center;
+    background: rgba(7, 3, 3, 0.644);
+    padding: 30px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+}
+.section-container p{
+    position: relative;
+    text-decoration: none;
+    color:rgb(185, 185, 185);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.section-container li:last-child{
+    border-right: none;
+}
+.section-container li:hover{
+    cursor: pointer;
+    background: rgb(24, 20, 20);
+}
+.button-play{
+    bottom:0px;
+    padding: 20px;
+    display: block;
+    height:auto;
+    margin-top:10px;
+    text-align: center;
+}
+.button-play button{
+    width:300px;
+    padding: 20px;
+    position: relative;
+    background-image:radial-gradient(black,rgb(37, 37, 37));
+    border: none;
+    color:silver;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+.section-team{
+    padding: 0px;
+    height:auto;
+    background: url('../image-ekstraklasa/bg2.jpg');
+    background-size: cover;
+}
+.button-close{
+    position: absolute;
+    left:30%;
+    width:40px;
+    height:40px;
+    text-align: center;
+    background:linear-gradient(white,rgb(148, 148, 148));
+    display: none;
+    z-index: 100;
+}
+.button-close > .btn-close{
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 0;
+    background: none;
+    margin: 0 auto;
+}
+.btn-close:hover{
+    background: rgb(182, 182, 182);
+}
+.btn-close span{
+    position: absolute;
+    top:40%;
+    left: 5%;
+    width: 90%;
+    height:5px;
+    background: rgb(0, 0, 0);
+    display: block;
+}
+.btn-close span:first-child{
+    transform:rotate(45deg);
+}
+.btn-close span:last-child{
+    transform:rotate(-45deg);
+}
+.team-div{
+    width:25%;
+    position: relative;
+    display: inline-block;
+    height:25%;
+    text-align: center;
+    color:rgb(231, 231, 231);
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.582);
+}
+.team-div p{
+    position: relative;
+    font-size: 0.8em;
+    padding: 2px;
+}
+.team-div:hover{
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.logo{
+    max-width:100%;
+    height:80%;
+    margin: 0 auto;
+    padding: 5px;
+}
+.logo>img{
+    position: relative;
+    width: auto;
+    height: auto;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.loading{
+    width:50%;
+    position: relative;
+    padding: 5px;
+    margin: 0 auto;
+    background: linear-gradient(rgb(5, 7, 107),rgb(6, 2, 24));
+    height:600px;
+}
+.loading p{
+    position: relative;
+    text-align: center;
+    top:30%;
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+}
+.single-square{
+    position: relative;
+    width:50%;
+    top:50%;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.arrow{
+    width:30%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid white;
+    color:white;
+    box-shadow: 0 0 5px white;
+}
+.fas{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+
+
+@media(max-width:1300px){
+    .logo>img{
+        width: 4.5em;
+    }
+    .team-div p{
+        font-size: 0.8em;
+    }
+    .loading{
+        width: 100%;
+    }
+}
+@media(max-width:992px){
+    .homepage{
+        height: auto;
+        display:block;        
+    }
+    .section-leagues{
+        height:400px;
+    }
+    .section-header{
+        height:20%;
+    }
+    .section-container{
+        height:80%;
+    }
+    .section-container ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: 1;
+    }
+    .section-container ul li{
+        width: 100%;
+        height: 100%;
+        margin-bottom: none;
+    }
+    .section-container ul li p{
+        text-align: center;
+    }
+    .team-div{
+        height: 130px;
+    }
+    .logo>img{
+        width: 4em;
+    }
+    .team-div p{
+        font-size: 0.8em;
+    }
+    .button-close{
+        position: relative;
+        left: 0;
+        width:100%;
+        height:40px;
+        text-align: center;
+        background:linear-gradient(white,rgb(148, 148, 148));
+    }
+    .button-close > .btn-close{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        outline: none;
+        border: none;
+        padding: 0;
+        background: none;
+        margin: 0 auto;
+    }
+}
+@media(max-width:768px){
+    .section-leagues{
+        height:200px;
+    }
+    .section-leagues p{
+        font-size: 15px;
+    }
+    .team-div{
+        height:110px;
+    }
+    .team-div p{
+        font-size: 0.8em;
+    }
+    .logo>img{
+        width: 3.5em;
+    }
+    .button-play button{
+        width:180px;
+        padding: 15px;
+        font-size: 15px;
+    }
+    .loading p{
+        font-size: 20px;
+    }
+    .button-close{
+        height:40px;
+    }
+    .button-close > .btn-close{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media(max-width:576px){
+    .section-header p{
+        padding: 10px;
+    }
+    .section-leagues{
+        height:200px;
+    }
+    .section-leagues p{
+        font-size: 13px;
+    }
+    .team-div{
+        height:100px;
+        padding: 2px;
+    }
+    .team-div p{
+        font-size: 0.6em;
+    }
+    .logo>img{
+        width: 3em;
+    }
+    .button-play button{
+        width:150px;
+        padding: 10px;
+    }
+    .loading{
+        height: 450px;
+    }
+    .loading p{
+        font-size: 13px;
+    }
+    .single-square{
+        height: 80px;
+    }
+}
+@media(max-width:400px){
+    .team-div{
+        height:90px;
+        width:50%;
+    }
+    .section-leagues{
+        height:150px;
+    }
+    .section-container ul{
+        display: block;
+        padding: 0;
+        background-color: brown;
+        height: 100%;
+        top:0%;
+        transform:translateY(0%);
+    }
+    .section-container ul>li{
+        width: 100%;
+        height: 40px;
+        padding: 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid white;
+    }
+    .section-leagues p{
+        font-size: 12px;
+    }
+    .team-div p{
+        font-size: 0.6em;
+    }
+    .logo>img{
+        width: 2.5em;
+    }
+    .loading{
+        height: 300px;
+    }
+    .single-square{
+        top:40%;
+        width: 80%;
+        height: 60px;
+    }
+    .button-close{
+        height:30px;
+    }
+    .button-close > .btn-close{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media(max-width:300px){
+    .section-leagues p{
+        font-size: 10px;
+    }
+    .section-team{
+        height: 180px;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    .team-div{
+        position: relative;
+        display: inline-block;
+        width:60%;
+        height: 100%;
+    }
+    .team-div p{
+        font-size: 0.7em;
+    }
+    .logo>img{
+        width: 3em;
+    }
+    .loading p{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:200px){
+    .button-play button{
+        width:80px;
+        padding: 5px;
+    }
+    .loading p{
+        font-size: 10px;
+    }
+}
+
+
