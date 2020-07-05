@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6797f823d613683440c552bc1faa8565",
+    "revision": "6140d46e88f4875a4e62c450e3e52c86",
     "url": "/SliderBall/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SliderBall/static/css/2.615f10cb.chunk.css"
   },
   {
-    "revision": "85e92df7de3e41399205",
+    "revision": "a58425ca75200a23ddd3",
     "url": "/SliderBall/static/css/main.9585b19d.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SliderBall/static/js/2.9b1f875a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "85e92df7de3e41399205",
-    "url": "/SliderBall/static/js/main.e1912a29.chunk.js"
+    "revision": "a58425ca75200a23ddd3",
+    "url": "/SliderBall/static/js/main.9d579d6e.chunk.js"
   },
   {
     "revision": "cd7baae99a11d8feef0a",
