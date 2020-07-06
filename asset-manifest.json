@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/SliderBall/static/css/main.cb419771.chunk.css",
-    "main.js": "/SliderBall/static/js/main.240d96fc.chunk.js",
-    "main.js.map": "/SliderBall/static/js/main.240d96fc.chunk.js.map",
+    "main.js": "/SliderBall/static/js/main.2ce01aa6.chunk.js",
+    "main.js.map": "/SliderBall/static/js/main.2ce01aa6.chunk.js.map",
     "runtime-main.js": "/SliderBall/static/js/runtime-main.8442e301.js",
     "runtime-main.js.map": "/SliderBall/static/js/runtime-main.8442e301.js.map",
     "static/css/2.615f10cb.chunk.css": "/SliderBall/static/css/2.615f10cb.chunk.css",
     "static/js/2.9b1f875a.chunk.js": "/SliderBall/static/js/2.9b1f875a.chunk.js",
     "static/js/2.9b1f875a.chunk.js.map": "/SliderBall/static/js/2.9b1f875a.chunk.js.map",
     "index.html": "/SliderBall/index.html",
-    "precache-manifest.1d1f25e4038429328e520c81d5f2155b.js": "/SliderBall/precache-manifest.1d1f25e4038429328e520c81d5f2155b.js",
+    "precache-manifest.1bf38da1c555628255551644601d3d1b.js": "/SliderBall/precache-manifest.1bf38da1c555628255551644601d3d1b.js",
     "service-worker.js": "/SliderBall/service-worker.js",
     "static/css/2.615f10cb.chunk.css.map": "/SliderBall/static/css/2.615f10cb.chunk.css.map",
     "static/css/main.cb419771.chunk.css.map": "/SliderBall/static/css/main.cb419771.chunk.css.map",
@@ -34,6 +34,6 @@
     "static/css/2.615f10cb.chunk.css",
     "static/js/2.9b1f875a.chunk.js",
     "static/css/main.cb419771.chunk.css",
-    "static/js/main.240d96fc.chunk.js"
+    "static/js/main.2ce01aa6.chunk.js"
   ]
 }
