@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect,useState } from 'react';
 import Team from '../subcomponents/Team';
+import {useSelector} from 'react-redux';
+import AnimationTeam from '../subcomponents/AnimationTeam';
+import Logo from '../arrays/EkstraklasaArray.json'
 
 const ChoosenState = (props) => {
     const {value} = props;
+    const teams = useSelector(state=> state.ekstraklasa.ekstraklasa);
+    const choosenTeams = useSelector(state=> state.ekstraklasa.teams);
 
-    /*let activeTeam = value.filter(item =>{
+    const [loadTeams,setLoadTeams] = useState(JSON.parse(JSON.stringify(Logo.ekstraklasa)));
+
+      /*let activeTeam = value.filter(item =>{
         if(item.active === true){
             return item
         }
@@ -21,6 +28,7 @@ const ChoosenState = (props) => {
     return ( 
         <>
             <section className='chosen-teams'>
+                {choosenTeams.length > 0 ? null : <AnimationTeam value={loadTeams}/>} 
                 {team}
             </section>
         </>

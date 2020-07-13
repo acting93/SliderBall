@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Homepage from './Homepage';
 import Playground from './Playground';
 import '../styles/main.css';
 import Loading from '../components/Loading';
-import {useSelector} from 'react-redux';
+import {useSelector,useDispatch} from 'react-redux';
 
 const Main = () => {
     const active = useSelector(state => state.playground.isActive);

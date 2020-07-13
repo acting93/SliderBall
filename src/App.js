@@ -17,9 +17,9 @@ class App extends Component {
       <>
             <div className = 'container-fluid'>
               <div className = 'root'>
-                <Header />
-                <Main />
-                <Footer />
+                <header>{<Header />}</header>
+                <main>{<Main />}</main>
+                <footer>{<Footer />}</footer>
               </div>
             </div>
       </>

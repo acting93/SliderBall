@@ -53,9 +53,13 @@ const BallFunctions =(props)=>{
         firstDataBall();
     },[]);
 
-    /*const start =()=>{
+    const start =()=>{
         dispatch({type:'UP_DOWN',up:false,down:false,midField:true})
-    }*/
+    }
+
+    useEffect(()=>{
+        start()
+    },[])
     
     const directionBallGoalkeeper =()=>{
 
@@ -153,7 +157,7 @@ const BallFunctions =(props)=>{
             dispatch({type:'AWAY_SCORE'});
             
             goalAwayTime = setTimeout(()=>{
-                dispatch({type:'RESET_BALL',top:360,left:50});
+                dispatch({type:'RESET_BALL',top:props.tileTop,left:50});
             },2000);
 
         }else{
@@ -183,7 +187,7 @@ const BallFunctions =(props)=>{
 
         //down
         if(midField === true){
-            dispatch({type:'BALL_MOVE_DOWN'})
+            dispatch({type:'BALL_MOVE_DOWN'});
         }
 
         if(down === true){
@@ -195,10 +199,10 @@ const BallFunctions =(props)=>{
                 dispatch({type:'MOVE_BALL_TO_LEFT',left:-5})
             }
             if(props.secondPartTile === true){
-                dispatch({type:'MOVE_BALL_TO_LEFT',left:7.5})
+                dispatch({type:'MOVE_BALL_TO_LEFT',left:2.5})
             }
             if(thirdPartTile === true){
-                dispatch({type:'MOVE_BALL_TO_LEFT',left:-7.5})
+                dispatch({type:'MOVE_BALL_TO_LEFT',left:-2.5})
             }
             if(fourthPartTile === true){
                 dispatch({type:'MOVE_BALL_TO_LEFT',left:-5})
@@ -221,10 +225,10 @@ const BallFunctions =(props)=>{
                 dispatch({type:'MOVE_BALL_TO_LEFT',left:-5})
             }
             if(props.secondPartTile === true){
-                dispatch({type:'MOVE_BALL_TO_LEFT',left:5})
+                dispatch({type:'MOVE_BALL_TO_LEFT',left:2.5})
             }
             if(thirdPartTile === true){
-                dispatch({type:'MOVE_BALL_TO_LEFT',left:-5})
+                dispatch({type:'MOVE_BALL_TO_LEFT',left:-2.5})
             }
             if(fourthPartTile === true){
                 dispatch({type:'MOVE_BALL_TO_LEFT',left:5})
@@ -239,14 +243,14 @@ const BallFunctions =(props)=>{
     };
 
     useEffect(()=>{
-        if((goalHomeColor === false && goalAwayColor === false) && (homeScore <= 10  || awayScore <= 10)){
+        if((goalHomeColor === false && goalAwayColor === false) && (homeScore <= 20  || awayScore <= 20)){
             interval = setInterval(()=>{dependencies()},30); 
             return ()=> clearInterval(interval);
         }
     });
 
     useEffect(()=>{
-        if(homeScore === 10  || awayScore === 10){
+        if(homeScore === 20  || awayScore === 20){
             clearInterval(interval);
         }
     });

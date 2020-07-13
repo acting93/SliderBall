@@ -1,11 +1,5 @@
-body{
-  margin: auto;
-  padding:auto;
-}
 .container-fluid{
-  background: #000;
-  position: relative;
-  padding:0 !important;
+  height: auto;
+  padding: 0 !important;
 }
-
 

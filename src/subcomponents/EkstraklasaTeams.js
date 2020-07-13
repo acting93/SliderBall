@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import {useDispatch,useSelector} from 'react-redux';
 import '../styles/chosenteams.css';
 
-
 const EkstraklasaTeams = (props) => {
     const {id,team,img,active} = props;
     const dispatch = useDispatch();

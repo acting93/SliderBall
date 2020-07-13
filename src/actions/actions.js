@@ -202,6 +202,16 @@ export const OpponentAutoMove =(left,right)=>({
     right
 })
 
+//reset 
+
+export const ResetSlide =()=>({
+    type:'RESET_SLIDE'
+})
+
+export const ResetBallState =()=>({
+    type:'RESET_BALL_STATE'
+})
+
 
 //run playground
 
@@ -225,6 +235,7 @@ export const LoadingMiddleware =()=>{
         }, 5000);
     }
 }
+
 //score 
 
 export const HomeScore =()=>({

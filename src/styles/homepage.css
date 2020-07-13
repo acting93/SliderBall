@@ -1,25 +1,32 @@
 .homepage{
+    background: #000;
     height:auto;
-    display: flex;
-    margin:0 auto;
     padding: 0 !important;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
     border-bottom: 2px solid white;
+    display: block;
+    background: url('../image-ekstraklasa/bg2.jpg');
+    background-size: 100% 100%;
+}
+.league-content{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
 }
 .section-leagues{
     height: 600px;
     text-align: center;
     color:white;
-    padding: 0px !important;
-    background: url('../image-ekstraklasa/bg.jpg');
-    background-size: 100% 100%;
+    padding: 5px !important;
 }
 .section-header{
     width: 100%;
     height: 20%;
     font-size: 20px;
-    background: rgba(0, 0, 0, 0.678);
+    background: rgba(78, 11, 11, 0.678);
+    transform: rotate(-5deg);
 }
 .section-header p{
     position: relative;
@@ -31,27 +38,31 @@
     height: 80%;
     padding: 0 !important;
     margin: 0 !important;
-    background: rgba(8, 3, 3, 0.596);
 }
 .section-container ul{
     position: relative;
     top:50%;
     transform:translateY(-50%);
     width:100%;
-    height:auto;
+    height:100%;
     margin: 0 !important;
     list-style-type: none;
     padding: 0 !important;
 }
 .section-container ul>li{
+    display: block;
     width:100%;
-    height:120px;
+    height:33%;
     text-align: center;
-    background: rgba(7, 3, 3, 0.644);
+    background: rgb(5, 8, 17);
     padding: 30px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    transform: rotate(-4deg);
+    box-shadow: 0 0 10px black;
+}
+.section-container ul>li:nth-child(odd){
+    transform: rotate(4deg);
+    background: rgb(59, 59, 59);
 }
 .section-container p{
     position: relative;
@@ -63,9 +74,9 @@
 .section-container li:last-child{
     border-right: none;
 }
-.section-container li:hover{
+.section-container ul>li:hover{
     cursor: pointer;
-    background: rgb(24, 20, 20);
+    background: rgb(2, 65, 26);
 }
 .button-play{
     bottom:0px;
@@ -74,6 +85,7 @@
     height:auto;
     margin-top:10px;
     text-align: center;
+    background: #000;
 }
 .button-play button{
     width:300px;
@@ -88,8 +100,6 @@
 .section-team{
     padding: 0px;
     height:auto;
-    background: url('../image-ekstraklasa/bg2.jpg');
-    background-size: cover;
 }
 .button-close{
     position: absolute;
@@ -97,7 +107,6 @@
     width:40px;
     height:40px;
     text-align: center;
-    background:linear-gradient(white,rgb(148, 148, 148));
     display: none;
     z-index: 100;
 }
@@ -111,7 +120,7 @@
     margin: 0 auto;
 }
 .btn-close:hover{
-    background: rgb(182, 182, 182);
+    background: rgb(146, 11, 11);
 }
 .btn-close span{
     position: absolute;
@@ -119,7 +128,7 @@
     left: 5%;
     width: 90%;
     height:5px;
-    background: rgb(0, 0, 0);
+    background: rgb(14, 5, 5);
     display: block;
 }
 .btn-close span:first-child{
@@ -162,45 +171,91 @@
     transform: translateY(-50%);
 }
 
-.loading{
-    width:50%;
-    position: relative;
-    padding: 5px;
-    margin: 0 auto;
-    background: linear-gradient(rgb(5, 7, 107),rgb(6, 2, 24));
-    height:600px;
+.description{
+    width:100%;
+    height:auto;
+    background: rgba(0, 0, 0, 0.644);
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:20px;
+    color:white;
+    padding: 20px;
 }
-.loading p{
-    position: relative;
-    text-align: center;
-    top:30%;
+.description>p{
+    width:50%;
+    margin: 0 auto;
+    text-align: justify;
     font-size: 25px;
+}
+.random-photo{
+    margin: 0 auto;
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    background:white;
+    box-shadow: 0 0 10px white;
+    overflow: hidden;
+}
+.random-photo>img{
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
+}
+.animation-logo{
+    -webkit-animation-name: logo;
+            animation-name: logo;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+}
+.mobile{
+    width: 100%;
+    height: 80px;
+    background-color: silver;
+    display: flex;
+    flex-direction: 1;
+    justify-content: center;
+}
+.mobile-array{
+    position: relative;
+    width:48%;
+    height: 100%;
+    background: linear-gradient(to bottom,silver,black,black);
+    text-align: center;
+    outline: none !important;
+}
+.mobile-array > .fas{
+    position: relative;
+    top:50%;
+    transform: translateY(0%);
     color:rgb(255, 255, 255);
 }
-.single-square{
-    position: relative;
-    width:50%;
-    top:50%;
-    height: 100px;
-    text-align: center;
-    margin: 0 auto;
-}
-.arrow{
-    width:30%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    border: 1px solid white;
-    color:white;
-    box-shadow: 0 0 5px white;
-}
-.fas{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 25px;
+
+
+@-webkit-keyframes logo{
+    0%{
+        left: -80%;
+    }
+    50%{
+        left:0%;
+    }
+    100%{
+        left:80%;  
+    }
 }
 
+@keyframes logo{
+    0%{
+        left: -80%;
+    }
+    50%{
+        left:0%;
+    }
+    100%{
+        left:80%;  
+    }
+}
 
 @media(max-width:1300px){
     .logo>img{
@@ -212,14 +267,22 @@
     .loading{
         width: 100%;
     }
+    .description>p{
+        width:80%;
+    }
 }
 @media(max-width:992px){
     .homepage{
         height: auto;
-        display:block;        
+        display:block; 
+        background-size:cover;       
+    }
+    .league-content{
+        height: auto;
+        display: block;
     }
     .section-leagues{
-        height:400px;
+        height:200px;
     }
     .section-header{
         height:20%;
@@ -256,7 +319,7 @@
         width:100%;
         height:40px;
         text-align: center;
-        background:linear-gradient(white,rgb(148, 148, 148));
+        background:linear-gradient(white,rgb(36, 36, 36));
     }
     .button-close > .btn-close{
         position: relative;
@@ -268,11 +331,11 @@
         background: none;
         margin: 0 auto;
     }
+    .description>p{
+        font-size: 18px;
+    }
 }
 @media(max-width:768px){
-    .section-leagues{
-        height:200px;
-    }
     .section-leagues p{
         font-size: 15px;
     }
@@ -290,9 +353,6 @@
         padding: 15px;
         font-size: 15px;
     }
-    .loading p{
-        font-size: 20px;
-    }
     .button-close{
         height:40px;
     }
@@ -302,14 +362,28 @@
     }
 }
 @media(max-width:576px){
+
     .section-header p{
         padding: 10px;
     }
     .section-leagues{
-        height:200px;
+        height:300px;
     }
     .section-leagues p{
         font-size: 13px;
+    }
+    .section-container ul{
+        display: block;
+        padding: 0;
+        height: 100%;
+        top:0%;
+        transform:translateY(0%);
+    }
+    .section-container ul>li{
+        width: 100%;
+        height: 33%;
+        padding: 0;
+        margin-bottom: 0;
     }
     .team-div{
         height:100px;
@@ -325,38 +399,21 @@
         width:150px;
         padding: 10px;
     }
-    .loading{
-        height: 450px;
-    }
-    .loading p{
-        font-size: 13px;
-    }
     .single-square{
         height: 80px;
+    }
+    .description>p{
+        width:95%;
+        font-size: 15px;
+    }
+    .mobile{
+        height:60px;
     }
 }
 @media(max-width:400px){
     .team-div{
         height:90px;
         width:50%;
-    }
-    .section-leagues{
-        height:150px;
-    }
-    .section-container ul{
-        display: block;
-        padding: 0;
-        background-color: brown;
-        height: 100%;
-        top:0%;
-        transform:translateY(0%);
-    }
-    .section-container ul>li{
-        width: 100%;
-        height: 40px;
-        padding: 0;
-        margin-bottom: 0;
-        border-bottom: 1px solid white;
     }
     .section-leagues p{
         font-size: 12px;
@@ -367,11 +424,7 @@
     .logo>img{
         width: 2.5em;
     }
-    .loading{
-        height: 300px;
-    }
     .single-square{
-        top:40%;
         width: 80%;
         height: 60px;
     }
@@ -381,6 +434,9 @@
     .button-close > .btn-close{
         width: 30px;
         height: 30px;
+    }
+    .description>p{
+        font-size: 12px;
     }
 }
 @media(max-width:300px){
@@ -404,8 +460,9 @@
     .logo>img{
         width: 3em;
     }
-    .loading p{
-        font-size: 12px;
+    .description>p{
+        width: 100%;
+        font-size: 11px;
     }
 }
 
@@ -414,7 +471,7 @@
         width:80px;
         padding: 5px;
     }
-    .loading p{
+    .description>p{
         font-size: 10px;
     }
 }

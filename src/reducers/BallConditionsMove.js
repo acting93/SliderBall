@@ -168,6 +168,24 @@ const ballConditionsMove =(state=condition,action)=>{
                 ballLeftPosition: action.left,
                 ballTopPosition:action.top
             }
+        
+        case 'RESET_BALL_STATE':
+            return{
+                isTop: false,
+                midField:null,
+                straightBottom: null,
+                straightTop:null,
+                midTile:null,
+                firstPartTile:null,
+                secondPartTile:null,
+                fourthPartTile:null,
+                thirdPartTile:null,
+                bounceRight:null,
+                bounceLeft:null,
+                up:false,
+                down:false,
+                ballStart:false
+            }
 
 
         default: return state

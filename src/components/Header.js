@@ -6,7 +6,7 @@ const Header = () => {
     return ( 
         <>
             <header className='col-12'>
-                <p>Soccer Slide</p>
+                <p>FOOTBALL SLIDER </p>
                 <img src={Ball} alt='ball' />
             </header>
         </>

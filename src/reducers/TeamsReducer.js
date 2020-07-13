@@ -84,10 +84,13 @@ const TeamsReducer =(state=leagues,action)=>{
             }
         
         case 'RETURN_HOMEPAGE':
-            //const teamsEmpty = [...state.teams];
             return{
                 ...state,
-                teams:[]
+                teams:[],
+                homeScore:0,
+                awayScore:0,
+                goalColorHome:false,
+                goalColorAway:false
             }
 
         default: return state

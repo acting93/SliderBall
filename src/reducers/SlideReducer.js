@@ -26,7 +26,7 @@ const SlideReducer =(state=states,action)=>{
             return{
                 ...state,
                 isPlaygroundActive:false,
-                isActive:false
+                isActive:false,
             }
         
         case 'LOADING_ELEMENT':
@@ -45,15 +45,15 @@ const SlideReducer =(state=states,action)=>{
             }
 
         case 'MOVE_RIGHT':
-            if(state.move >= 75){ // the width of child is 25% of parent div - width is expressed in % 
+            if(state.move >= 70){
                 return{
                     ...state,
-                    move:75
+                    move:70
                 }
             }
             return{
                 ...state,
-                move: state.move + 5 // + 5% === width of child div
+                move: state.move + 5
             }
 
         case 'MOVE_LEFT':
@@ -65,7 +65,7 @@ const SlideReducer =(state=states,action)=>{
             }
             return{
                 ...state,
-                move:state.move - 5 // - 5% === width of child div
+                move:state.move - 5
             }
         //opponent
 
@@ -79,27 +79,15 @@ const SlideReducer =(state=states,action)=>{
             }    
 
         case 'OPPONENT_LEFT':
-            /*if(state.moveOpponent <= 0){
-                return{
-                    ...state,
-                    moveOpponent: state.moveOpponent + 5
-                }
-            }*/
             return{
                 ...state,
                 moveOpponent:state.moveOpponent - 5
             }
 
         case 'OPPONENT_RIGHT':
-            /*if(state.moveOpponent >= 75){
-                return{
-                    ...state,
-                    moveOpponent:state.moveOpponent - 5
-                }
-            }*/
             return{
                 ...state,
-                moveOpponent:state.moveOpponent + 5 // - 5% === width of child div
+                moveOpponent:state.moveOpponent + 5 
             }
 
         case 'OPPONENT_AUTO_MOVE':
@@ -122,6 +110,21 @@ const SlideReducer =(state=states,action)=>{
         case'LOADING':
             return{
                 isActive: action.isActive
+            }
+        
+        case 'RESET_SLIDE':
+            return{
+                ...state,
+                move:null,
+                isActive:false,
+                isPlaygroundActive:false,
+                rightPlayground:null,
+                leftPlayground:null,
+                widthOpponent:null,
+                moveOpponent:null,
+                LeftOpponent:null,
+                bottomOpponent:null,
+                rightOpponent:null
             }
 
         default: return state

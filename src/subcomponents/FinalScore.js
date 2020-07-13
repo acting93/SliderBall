@@ -23,10 +23,10 @@ const FinalScore = (props) => {
                     <p>You Lost</p>
                     <img src={require(`../image-ekstraklasa/${teamSecond }.png`)} alt='logoSecond'/>
                 </div>
-                <button onClick={()=>{dispatch({type:'RETURN_HOMEPAGE'})}}>Zagraj jeszcze raz</button>
+                <a href={"acting93.github.io/SliderBall/"}><button onClick>Zagraj jeszcze raz</button></a>
             </div>
         </>
      );
 };
- 
+
 export default FinalScore;

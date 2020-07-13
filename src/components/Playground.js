@@ -1,6 +1,5 @@
-import React,{useEffect, useMemo,useState} from 'react';
+import React,{useEffect,useMemo,useState} from 'react';
 import {useDispatch,useSelector,connect} from 'react-redux';
-import {Col} from 'react-bootstrap';
 import '../styles/playground.css';
 import Goalkeeper from '../subcomponents/Goalkeeper';
 import Opponent from '../subcomponents/Opponent';
@@ -8,6 +7,7 @@ import BallFunctions from '../subcomponents/BallFunctions';
 import Score from '../subcomponents/Score';
 import Ball from '../subcomponents/Ball';
 import FinalScore from '../subcomponents/FinalScore';
+import MovingMobile from '../subcomponents/MovingMobile';
 
 const Playground = (props) => {
 
@@ -17,6 +17,7 @@ const Playground = (props) => {
     const ballTopPosition = useSelector(state => state.conditions.ballTopPosition);
 
     const [final,setFinal] = useState(false);
+    const [width,setWidth] = useState(false)
     
     const homeScore = useMemo(()=>{
         return props.homeScore
@@ -45,7 +46,7 @@ const Playground = (props) => {
     },[ballTopPosition]);
 
     const finalScore =()=>{
-        if(props.homeScore === 10 || props.awayScore === 10 ){
+        if(props.homeScore === 20|| props.awayScore === 20 ){
             setFinal(true);
         }
     };
@@ -61,6 +62,16 @@ const Playground = (props) => {
         return ()=> clearTimeout(ballStart);
     },[]);
 
+
+    const mobileArrows = useMemo(()=>{
+        const widthWindow = window.innerWidth;
+        if(widthWindow <= 576){
+            setWidth(true)
+        }else{
+            setWidth(false) 
+        }
+    },[width]) 
+
     return ( 
         <>
                 <section className='playground-section'>
@@ -74,6 +85,7 @@ const Playground = (props) => {
                             <Goalkeeper />
                         </div>
                         <div className='goal-home' style={props.isGoalAway=== true ? {background:"green"} : null}><p style={props.isGoalAway ? {display:"block"} : {display:"none"}}>GOL</p></div>
+                        {width === true ? <MovingMobile /> : null}    
                 </section>
         </>
      );

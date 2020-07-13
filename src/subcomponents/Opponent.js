@@ -37,7 +37,7 @@ const Opponent = () => {
                 setRight(true);
                 setLeft(false);
             }
-            if(moveOpponent >= 65){
+            if(moveOpponent >= 70){
                 setRight(false);
                 setLeft(true);
             }
@@ -83,17 +83,8 @@ const Opponent = () => {
         autoWidth();
     });
 
-    /*const movingLeft =()=>{
-        if(right === true){
-            dispatch({type:'OPPONENT_RIGHT'})
-        }
-        if(left === true){
-            dispatch({type:'OPPONENT_LEFT'})
-        }
-    }*/
-
     useEffect(()=>{
-        if(homeScore === 10  || awayScore === 10){
+        if(homeScore === 20  || awayScore === 20){
             clearInterval(interval);
         }
     });
@@ -113,8 +104,6 @@ const Opponent = () => {
                 <div className='keep'></div>
                 <div className='keep'></div>
             </div>
-            {/*<button onClick={movingLeft}>OpponentLeft</button>*/}
-            {/*<button onClick={movingLeft}>OpponentRight</button>*/}
         </>
      );
 };

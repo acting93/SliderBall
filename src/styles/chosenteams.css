@@ -1,10 +1,11 @@
 .chosen-teams{
     display: block;
     height: auto;
-    background: linear-gradient(rgb(5, 7, 107),rgb(6, 2, 24));
+    background: rgb(3, 35, 95);
     margin: 0 auto;
     text-align: center;
-    padding: 10px;
+    overflow: hidden;
+    padding: 5px;
 }
 .chosen-teams p{
     color:rgb(255, 255, 255);
