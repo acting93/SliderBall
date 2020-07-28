@@ -16,17 +16,7 @@ class Homepage extends Component {
             firstLeague:false,
             secondLeague:false
         }
-
-        this.hideSection = this.hideSection.bind(this);
     }
-
-    hideSection(){
-        this.setState({
-            ekstraklasa:false,
-            firstLeague:false,
-            secondLeague:false
-        })
-    };
 
     render(){
         const {ekstraklasa,firstLeague,secondLeague} = this.state;
@@ -50,26 +40,23 @@ class Homepage extends Component {
                                     <li
                                         name='ekstraklasa'
                                         value={this.state.ekstraklasa}
-                                        onClick={()=>{this.setState({ekstraklasa:true,firstLeague:false,secondLeague:false});this.props.ekstraklasa()}}>
+                                        onClick={()=>{this.setState({ekstraklasa:!ekstraklasa,firstLeague:false,secondLeague:false});this.props.ekstraklasa()}}>
                                             <p>EKSTRAKLASA</p>
                                     </li>
                                     <li
                                         name='firstLeague'
                                         value={this.state.firstLeague}
-                                        onClick={()=>{this.setState({firstLeague:true,ekstraklasa:false,secondLeague:false})}}>
+                                        onClick={()=>{this.setState({firstLeague:!firstLeague,ekstraklasa:false,secondLeague:false})}}>
                                             <p>1 LIGA</p>
                                         </li>
                                     <li
                                         name='secondLeague'
                                         value={this.state.secondLeague}
-                                        onClick={()=>{this.setState({secondLeague:true,ekstraklasa:false,firstLeague:false})}}>
+                                        onClick={()=>{this.setState({secondLeague:!secondLeague,ekstraklasa:false,firstLeague:false})}}>
                                             <p>2 LIGA</p>
                                     </li>
                                 </ul>
                             </div>
-                        </section>
-                        <section className='button-close' style={ekstraklasa || firstLeague || secondLeague === true ? {display:"block"} : {display:"none"}}>
-                            <button className='btn-close' onClick={this.hideSection}><span></span><span></span></button>
                         </section>
                         <section className='col-12 col-lg-8 section-team'>
                             {ekstraklasa === true ? <Ekstraklasa value={this.props.ekstraklasaTeams}/> : null}
@@ -77,7 +64,6 @@ class Homepage extends Component {
                             {secondLeague === true ? <SecondLeague /> : null}
                         </section>
                     </section>
-                    
                     <section className='col-12 button-play'>
                             <button style={this.props.chosenTeam.length === 2 ? {background:"green"} : {background:"silver",color:"white"}}
                             onClick={this.props.chosenTeam.length === 2 ? ()=> this.props.playground() : null}>Play</button>

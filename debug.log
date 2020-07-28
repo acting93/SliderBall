@@ -212,3 +212,6 @@
 [0706/200932.544:ERROR:exit_code_watcher_win.cc(87)] Failed to wait for process exit or stop event
 [0706/200933.023:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: Potok zosta³ zakoñczony. (0x6D)
 [0706/200933.024:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\settings.dat: Odmowa dostêpu. (0x5)
+[0728/215033.704:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\settings.dat: Odmowa dostêpu. (0x5)
+[0728/215034.162:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: Potok zosta³ zakoñczony. (0x6D)
+[0728/215034.195:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\settings.dat: Odmowa dostêpu. (0x5)
