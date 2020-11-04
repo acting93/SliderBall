@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/SliderBall/static/css/main.68659e47.chunk.css",
-    "main.js": "/SliderBall/static/js/main.1e59f1ac.chunk.js",
-    "main.js.map": "/SliderBall/static/js/main.1e59f1ac.chunk.js.map",
+    "main.css": "/SliderBall/static/css/main.1214648b.chunk.css",
+    "main.js": "/SliderBall/static/js/main.64019e10.chunk.js",
+    "main.js.map": "/SliderBall/static/js/main.64019e10.chunk.js.map",
     "runtime-main.js": "/SliderBall/static/js/runtime-main.8442e301.js",
     "runtime-main.js.map": "/SliderBall/static/js/runtime-main.8442e301.js.map",
     "static/css/2.615f10cb.chunk.css": "/SliderBall/static/css/2.615f10cb.chunk.css",
     "static/js/2.28e54118.chunk.js": "/SliderBall/static/js/2.28e54118.chunk.js",
     "static/js/2.28e54118.chunk.js.map": "/SliderBall/static/js/2.28e54118.chunk.js.map",
     "index.html": "/SliderBall/index.html",
-    "precache-manifest.57fb0663df43711a202848cbbe970d0c.js": "/SliderBall/precache-manifest.57fb0663df43711a202848cbbe970d0c.js",
+    "precache-manifest.bc76ff9f85cf13b0e6ab3efe006d02c0.js": "/SliderBall/precache-manifest.bc76ff9f85cf13b0e6ab3efe006d02c0.js",
     "service-worker.js": "/SliderBall/service-worker.js",
     "static/css/2.615f10cb.chunk.css.map": "/SliderBall/static/css/2.615f10cb.chunk.css.map",
-    "static/css/main.68659e47.chunk.css.map": "/SliderBall/static/css/main.68659e47.chunk.css.map",
+    "static/css/main.1214648b.chunk.css.map": "/SliderBall/static/css/main.1214648b.chunk.css.map",
     "static/js/2.28e54118.chunk.js.LICENSE.txt": "/SliderBall/static/js/2.28e54118.chunk.js.LICENSE.txt",
     "static/media/arka.png": "/SliderBall/static/media/arka.8089288a.png",
     "static/media/ball.png": "/SliderBall/static/media/ball.9c97e763.png",
     "static/media/playground.css": "/SliderBall/static/media/bg.d3eefbdb.jpg",
-    "static/media/homepage.css": "/SliderBall/static/media/bg2.36f6ec9f.jpg",
+    "static/media/homepage.css": "/SliderBall/static/media/bg3.d4ee0630.jpg",
     "static/media/cracovia.png": "/SliderBall/static/media/cracovia.3f484420.png",
     "static/media/gornik.png": "/SliderBall/static/media/gornik.6ef3c811.png",
     "static/media/korona.png": "/SliderBall/static/media/korona.aeda4a2a.png",
@@ -33,7 +33,7 @@
     "static/js/runtime-main.8442e301.js",
     "static/css/2.615f10cb.chunk.css",
     "static/js/2.28e54118.chunk.js",
-    "static/css/main.68659e47.chunk.css",
-    "static/js/main.1e59f1ac.chunk.js"
+    "static/css/main.1214648b.chunk.css",
+    "static/js/main.64019e10.chunk.js"
   ]
 }
