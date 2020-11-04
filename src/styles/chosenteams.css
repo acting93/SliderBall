@@ -1,7 +1,7 @@
 .chosen-teams{
     display: block;
     height: auto;
-    background: rgb(3, 35, 95);
+    background: rgb(0, 0, 0);
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
@@ -11,7 +11,7 @@
     color:rgb(255, 255, 255);
 }
 .team-picked{
-    margin: 10 auto;
+    margin: 0 auto;
     padding: 0px;
     display: inline-block;
     color:white;

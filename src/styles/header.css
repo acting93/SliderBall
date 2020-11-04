@@ -3,18 +3,19 @@ header{
     position: relative;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    background: rgb(240, 231, 231);
+    background:white;
+    padding: 0 !important;
 }
 header>p{
+    width: 100%;
     position: relative;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 144, 43);
     top:50%;
     transform: translateY(-50%);
     font-size: 80px;
     font-weight: 400;
     text-transform: uppercase;
     font-weight: 400;
-    color:rgb(179, 179, 179);
 }
 
 header>img{
