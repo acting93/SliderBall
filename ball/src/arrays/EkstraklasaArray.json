@@ -1,0 +1,100 @@
+{
+    "ekstraklasa":[
+        {
+            "id":0,
+            "team":"Arka Gdynia",
+            "img":"arka",
+            "active":false
+        },
+        {
+            "id":1,
+            "team":"Cracovia",
+            "img":"cracovia",
+            "active":false
+        },
+        {
+            "id":2,
+            "team":"Górnik Zabrze",
+            "img":"gornik",
+            "active":false
+        },
+        {
+            "id":3,
+            "team":"Jagiellonia Białystok",
+            "img":"jagiellonia",
+            "active":false
+        },
+        {
+            "id":4,
+            "team":"Korona Kielce",
+            "img":"korona",
+            "active":false
+        },
+        {
+            "id":5,
+            "team":"Lech Poznań",
+            "img":"lech",
+            "active":false
+        },
+        {
+            "id":6,
+            "team":"Lechia Gdańsk",
+            "img":"lechia",
+            "active":false
+        },
+        {
+            "id":7,
+            "team":"Legia Warszawa",
+            "img":"legia",
+            "active":false
+        },
+        {
+            "id":8,
+            "team":"ŁKS Łódź",
+            "img":"lks",
+            "active":false
+        },
+        {
+            "id":9,
+            "team":"Piast Gliwice",
+            "img":"piast",
+            "active":false
+        },
+        {
+            "id":10,
+            "team":"Pogoń Szczecin",
+            "img":"pogon",
+            "active":false
+        },
+        {
+            "id":11,
+            "team":"Raków Częstochowa",
+            "img":"rakow",
+            "active":false
+        },
+        {
+            "id":12,
+            "team":"Śląsk Wrocław",
+            "img":"slask",
+            "active":false
+        },
+        {
+            "id":13,
+            "team":"Wisła Kraków",
+            "img":"wisla",
+            "active":false
+        },
+        {
+            "id":14,
+            "team":"Wisła Płock",
+            "img":"wisla_plock",
+            "active":false
+        },
+        {
+            "id":15,
+            "team":"Zagłębie Lubin",
+            "img":"zaglebie",
+            "active":false
+        }
+    ]
+}
