@@ -53,7 +53,7 @@ class Homepage extends Component {
                             </div>
                         </section>
                         <section className='col-12 col-lg-8 section-team'>
-                            {(ekstraklasa || firstLeague || secondLeague) === false ?<article className='description'> 
+                            {(ekstraklasa || firstLeague || secondLeague) === false ? <article className='description'> 
                                 <p>
                                     Kochasz piłkę nożną, a w szczególności najlepszą ligę na Świecie czyli Ekstraklap..., Ekstraklasę ? Ja tak. Jesteś w metrze ? W pracy ? W autobusie ? Żona na zakupach a Ty czkasz w aucie ?
                                     Aplikacja to nie Fifa, Pro Evolution Soccer a jedynie slider podobny do kultowej gry Arkanoid. Zagraj swoim klubem przeciwko Twojemu największemu wrogowi.

@@ -1,5 +1,5 @@
 import React from 'react';
-import {useSelector,useDispatch} from 'react-redux';
+import {useSelector} from 'react-redux';
 import '../styles/playground.css';
 
 
@@ -9,7 +9,6 @@ const FinalScore = (props) => {
     const teamSecond = useSelector(state => state.ekstraklasa.teams[1].img);
 
     const {homeScore,awayScore} = props;
-    const dispatch = useDispatch();
     
     
     return ( 
@@ -17,11 +16,11 @@ const FinalScore = (props) => {
             <div className='final-score'>
                 <div className='final-score-content' style={homeScore > awayScore ? {display:'block'} : {display:'none'}}>
                     <p>You Won</p>
-                    <img src={require(`../image-ekstraklasa/${teamFirst }.png`)} alt='logoFirst'/>
+                    <img src={require(`../image-ekstraklasa/${teamFirst }.png`).default} alt='logoFirst'/>
                 </div>
                 <div className='final-score-content' style={homeScore < awayScore ? {display:'block'} : {display:'none'}}>
                     <p>You Lost</p>
-                    <img src={require(`../image-ekstraklasa/${teamSecond }.png`)} alt='logoSecond'/>
+                    <img src={require(`../image-ekstraklasa/${teamSecond }.png`).default} alt='logoSecond'/>
                 </div>
                 <a href={"acting93.github.io/SliderBall/"}><button onClick>Zagraj jeszcze raz</button></a>
             </div>

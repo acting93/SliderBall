@@ -13,6 +13,7 @@ const BallFunctions =(props)=>{
         const bottomOpponent = useSelector(state => state.playground.bottomOpponent);
         const rightOpponent = useSelector(state => state.playground.rightOpponent);*/
 
+//ball position on screen
         const heightPlayground = useSelector(state => state.playground.heightPlayground);
         const down = useSelector(state => state.conditions.down);
         const up = useSelector(state => state.conditions.up);
@@ -40,7 +41,7 @@ const BallFunctions =(props)=>{
         let goalAwayTime = null;
         
         const dispatch = useDispatch();
-
+//first position ball
     const firstDataBall =()=>{
         dispatch({
             type:'FIRST_BALL_DATA',
@@ -55,12 +56,13 @@ const BallFunctions =(props)=>{
 
     const start =()=>{
         dispatch({type:'UP_DOWN',up:false,down:false,midField:true})
-    }
+    };
 
     useEffect(()=>{
         start()
-    },[])
-    
+    },[]);
+
+   // goalkeeper moving position
     const directionBallGoalkeeper =()=>{
 
         const oneFifth = props.widthTile * 0.20;
@@ -92,6 +94,7 @@ const BallFunctions =(props)=>{
         }
     };
     
+    //goalkeeper moving automatic
     const directionBallOpponent =()=>{
 
         const oneFifth = props.widthOpponent * 0.20;
@@ -122,7 +125,7 @@ const BallFunctions =(props)=>{
             dispatch({type:'BOUNCE_LEFT'})
         }
     };
-
+//dependings of positioning goalkeeper and ball in playground
     const upDown =()=>{
 
         if(((ballRightPosition >= props.leftOpponent && ballRightPosition <= props.rightOpponent) || (ballLeftPosition >= props.leftOpponent  && ballLeftPosition <= props.rightOpponent)) && ballTopPosition <= props.bottomOpponent){
@@ -132,7 +135,7 @@ const BallFunctions =(props)=>{
             dispatch({type:'UP_DOWN',up:true,down:false,midField:false})
         }
     };
-
+// reset position ball after goal 
     const ResetPositionBall =()=>{
 
         const ballBottomOffset = ballTopPosition + ballHeight;
@@ -166,7 +169,8 @@ const BallFunctions =(props)=>{
             clearTimeout(goalHomeTime);
         }
     };
-  
+  // execution of funtions
+
     useEffect(()=>{
         ResetPositionBall();
     },[ballTopPosition]);

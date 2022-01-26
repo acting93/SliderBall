@@ -9,7 +9,7 @@ const Ball = (props) => {
 
     const ball = useRef();
     const dispatch = useDispatch();
-
+//ball moving
     const uploadData =()=>{
         const leftBall = ball.current.getBoundingClientRect().left;
         const rightBall = ball.current.getBoundingClientRect().right;

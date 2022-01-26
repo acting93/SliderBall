@@ -3,7 +3,7 @@ header{
     position: relative;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    background:white;
+    background:rgb(34, 34, 34);
     padding: 0 !important;
 }
 header>p{

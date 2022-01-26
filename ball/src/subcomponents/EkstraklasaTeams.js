@@ -19,7 +19,7 @@ const EkstraklasaTeams = (props) => {
         <>
             <div className='team-div' onClick={chosenTeams.length < 2 ? pickTeam : null}>
                 <div className='logo' style={active === true ? {background:'silver'} : null}>
-                    <img src={require(`../image-ekstraklasa/${img}.png`)} alt='logoteam'/>
+                    <img src={require(`../image-ekstraklasa/${img}.png`).default} alt=''/>
                 </div>
                 <p>{team}</p>
             </div>

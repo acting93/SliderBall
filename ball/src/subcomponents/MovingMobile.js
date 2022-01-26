@@ -18,8 +18,8 @@ const MovingMobile = () => {
     return ( 
         <>
             <div className='mobile'>
-                <button onClick={moveLeft} className='mobile-array'><i className='fas fa-arrow-left'></i></button>
-                <button onClick={moveRight} className='mobile-array'><i className='fas fa-arrow-right'></i></button>
+                <button onClick={moveLeft} className='mobile-array'><i className='fa fa-arrow-left'></i></button>
+                <button onClick={moveRight} className='mobile-array'><i className='fa fa-arrow-right'></i></button>
             </div>
         </>
      );

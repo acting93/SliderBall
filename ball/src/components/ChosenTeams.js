@@ -6,11 +6,10 @@ import Logo from '../arrays/EkstraklasaArray.json'
 
 const ChoosenState = (props) => {
     const {value} = props;
-    const teams = useSelector(state=> state.ekstraklasa.ekstraklasa);
+    //const teams = useSelector(state=> state.ekstraklasa.ekstraklasa);
     const choosenTeams = useSelector(state=> state.ekstraklasa.teams);
 
     const [loadTeams,setLoadTeams] = useState(JSON.parse(JSON.stringify(Logo.ekstraklasa)));
-
       /*let activeTeam = value.filter(item =>{
         if(item.active === true){
             return item

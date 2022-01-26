@@ -14,7 +14,7 @@ const Team = (props) => {
     
     return ( 
         <>
-            <div className='team-picked'><img src={require(`../image-ekstraklasa/${img}.png`)} alt='logo'/><p>{team}</p></div>
+            <div className='team-picked'><img src={require(`../image-ekstraklasa/${img}.png`).default} alt='logo'/><p>{team}</p></div>
         </>
      );
 };

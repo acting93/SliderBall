@@ -2,10 +2,10 @@
 .loading{
     position: relative;
     height: 600px;
-    width:800px;
+    width:100vw;
     padding: 15px;
     margin: 0 auto;
-    background: linear-gradient(rgb(5, 7, 107),rgb(6, 2, 24));
+    background: black;
     box-shadow: 0 0 10px silver;
 }
 
@@ -33,7 +33,7 @@
     color:white;
     box-shadow: 0 0 5px white;
 }
-.fas{
+.fa{
     position: relative;
     top: 50%;
     transform: translateY(-50%);

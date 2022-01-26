@@ -1,19 +1,18 @@
 import React,{useEffect, useState} from 'react';
 
 const AnimationTeam = (props) => {
-    const {value} = props
+    const {value} = props;
     const [teamLogo,setteamLogo] = useState(value[0].img);
     const [newClass,setNewClass] = useState(false);
-
     let intervals = null;
     let interval = null;
 
-
+//random logo 
     const randomTeam =()=>{
         const randomTeam = Math.floor(Math.random(value)*value.length);
         setteamLogo(value[randomTeam].img);
         setNewClass(true)
-    }
+    };
 
     useEffect(()=>{
         if(newClass === false){
@@ -23,7 +22,7 @@ const AnimationTeam = (props) => {
         }
         return ()=> clearInterval(interval)
 
-    })
+    });
 
     useEffect(()=>{
         if(newClass === true){
@@ -38,10 +37,10 @@ const AnimationTeam = (props) => {
     return ( 
         <>
             <div className='random-photo'>
-                <img src={require(`../image-ekstraklasa/${teamLogo}.png`)} className={newClass === true ? 'animation-logo' : null} alt='randomLogo'/>
+                <img src={require(`../image-ekstraklasa/${teamLogo}.png`).default} className={newClass === true ? 'animation-logo' : null} alt=''/>
             </div>
         </>
      );
-}
+};
  
 export default AnimationTeam;

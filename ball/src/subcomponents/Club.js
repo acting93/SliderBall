@@ -7,7 +7,7 @@ const Club = (props) => {
     return ( 
         <>
             <div className='team-match'>
-                <img src={require(`../image-ekstraklasa/${img}.png`)} alt='logo'/>
+                <img src={require(`../image-ekstraklasa/${img}.png`).default} alt='logo'/>
                 <p>{team}</p>
             </div>
         </>
