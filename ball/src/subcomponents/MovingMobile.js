@@ -13,13 +13,12 @@ const MovingMobile = () => {
     const moveLeft =()=>{
         dispatch({type:'MOVE_LEFT'});
     };
-    console.log("reessss")
 
     return ( 
         <>
             <div className='mobile'>
-                <button onClick={moveLeft} className='mobile-array'><i className='fa fa-arrow-left'></i></button>
-                <button onClick={moveRight} className='mobile-array'><i className='fa fa-arrow-right'></i></button>
+                <button onTouchMove={moveLeft} className='mobile-array'><i className='fa fa-arrow-left'></i></button>
+                <button onTouchMove={moveRight} className='mobile-array'><i className='fa fa-arrow-right'></i></button>
             </div>
         </>
      );

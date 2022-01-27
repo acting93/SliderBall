@@ -5,11 +5,13 @@ import '../styles/playground.css';
 
 const Ball = (props) => {
 
-    const {left,top} = props
+    const {left,top} = props;
 
     const ball = useRef();
     const dispatch = useDispatch();
+
 //ball moving
+
     const uploadData =()=>{
         const leftBall = ball.current.getBoundingClientRect().left;
         const rightBall = ball.current.getBoundingClientRect().right;
@@ -38,6 +40,6 @@ const Ball = (props) => {
             <div className='ball' ref={ball} style={{left:`${left}%`,top:`${top}px`}}></div>
         </>
      );
-}
+};
  
 export default React.memo(Ball);

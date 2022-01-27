@@ -94,7 +94,7 @@ const Opponent = () => {
             <div className='opponent'
                 style={{
                     left:`${moveOpponent}%`,
-                    width: width === true ? "35%" : '25%'
+                    width: width === true ? '35%' : '25%'
                 }}
                 ref={opponent}
                 >

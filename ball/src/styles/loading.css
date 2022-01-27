@@ -2,10 +2,10 @@
 .loading{
     position: relative;
     height: 600px;
-    width:100vw;
+    width:50%;
     padding: 15px;
     margin: 0 auto;
-    background: black;
+    background: radial-gradient(black,rgb(56, 56, 56));
     box-shadow: 0 0 10px silver;
 }
 
@@ -19,19 +19,18 @@
 }
 .single-square{
     position: relative;
-    width:50%;
-    height: 100px;
+    width:100%;
+    height: auto;
     text-align: center;
     margin: 0 auto;
 }
 .arrow{
-    width:30%;
-    height: 100%;
+    width:150px;
+    height: 100px;
     display: inline-block;
     text-align: center;
     border: 1px solid white;
     color:white;
-    box-shadow: 0 0 5px white;
 }
 .fa{
     position: relative;
@@ -53,6 +52,11 @@
     .loading p{
         font-size: 18px;
     }
+    .arrow{
+        width: 25%;
+        height: 80%;
+    }
+   
 }
 @media(max-width:300px){
     .single-square{

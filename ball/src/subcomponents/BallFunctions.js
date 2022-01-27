@@ -41,6 +41,7 @@ const BallFunctions =(props)=>{
         let goalAwayTime = null;
         
         const dispatch = useDispatch();
+
 //first position ball
     const firstDataBall =()=>{
         dispatch({
@@ -135,6 +136,7 @@ const BallFunctions =(props)=>{
             dispatch({type:'UP_DOWN',up:true,down:false,midField:false})
         }
     };
+    
 // reset position ball after goal 
     const ResetPositionBall =()=>{
 
@@ -248,7 +250,7 @@ const BallFunctions =(props)=>{
 
     useEffect(()=>{
         if((goalHomeColor === false && goalAwayColor === false) && (homeScore <= 20  || awayScore <= 20)){
-            interval = setInterval(()=>{dependencies()},30); 
+            interval = setInterval(()=>{dependencies()},40); 
             return ()=> clearInterval(interval);
         }
     });
